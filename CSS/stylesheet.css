@@ -1,0 +1,19 @@
+html, head, body {
+    background-color: lightcyan;
+}
+#menuButtonIndex {
+    width: 5vh;
+    height: 5vh;
+}
+#headerBoxIndex {
+    width: 100vw;
+    height: 0;
+    background-color: rgb(75, 75, 75, 0.65);
+    overflow-y: hidden;
+}
+.indexHeaders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
