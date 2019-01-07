@@ -1,6 +1,9 @@
-html, head, body {
+html,
+head,
+body {
     background-color: #b7f8d2;
 }
+
 #menuButtonIndex {
     width: 5vh;
     height: 5vh;
@@ -8,13 +11,25 @@ html, head, body {
     top: 0;
     left: 0;
 }
+#headerBoxIndexLogo {
+    width: 7.5vh;
+    height: 7.5vh;
+
+
+}
+.menuTextIndex {
+    text-decoration: none
+
+}
+.menuTextIndex:hover {
+    color: yellow;
+}
 #headerBoxIndex {
     width: 100%;
-    margin-top: -15vh;
     height: 0;
     position: fixed;
     z-index: 1;
-    background-color: rgba(167, 167, 167, 0.65);
+    background-color: rgba(247, 141, 141, 0.863);
     overflow-y: hidden;
     transition: height 0.5s;
     display: flex;
@@ -22,26 +37,71 @@ html, head, body {
     justify-content: center;
     align-content: center;
 }
+
 .menuTextIndex {
-   color: white;
-   margin-right: 3vw;
-   font-family: 'Lobster Two';
-   font-size: 4.5vh;
+    color: white;
+    margin-right: 3vw;
+    font-family: 'Lobster Two';
+    font-size: 4.5vh;
 }
-#closeRetractingMenu{
-    width: 100%;
-    height: 100vh;
-}
+
+
 #indexHeaderIconSection {
-width: 100%;
-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#indexHeaderIcon {
+    color: black;
+    text-align: center;
+    position: relative;
+    margin-top: 5vh;
+    font-family: 'Playfair Display SC';
+    font-size: 10vh;
+}
+
+#indexHeaderDescript {
+    color: black;
+    text-align: center;
+    position: relative;
+margin-top: -5vh;
+    font-family: 'Martel';
+    font-size: 3vh;
 
 }
-#indexHeaderIcon {
-color: black;
-text-align: center;
-position: relative;
-margin-top: 15vh;
-font-family: 'Lobster Two';
-font-size: 10vh;
+
+.indexImageGallery {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+ 
+}
+.carouselDimensions {
+    width: 85vh;
+    height: 55vh;
+}
+#indexMainTextSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+/* Lobster+Two|Josefin+Slab|Martel|Playfair+Display+SC|Sarabun|Vollkorn|ZCOOL+XiaoWei */
+
+.indexMainText {
+    font-family: 'Playfair Display SC';
+    font-size: 10vh;
+}
+.indexDescriptorText{
+    font-family: 'Josefin Slab';
+    font-size: 5vh;
+    text-align: center;
 }
