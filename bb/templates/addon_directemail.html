@@ -1,0 +1,36 @@
+<table class="forums">
+<tr>
+<td class="caption3">{$l_sendMsg2}&nbsp;&quot;{$userNick}&quot;</td>
+</tr>
+</table>
+
+<table class="tbTransparent">
+<tr>
+<td class="tbTransparent txtL">
+
+<span class="warning">{$warning}&nbsp;</span>
+
+<form action="{$main_url}/{$indexphp}" method="post" class="formStyle">
+<input type="hidden" name="action" value="senddirect" />
+
+<table class="w100">
+
+<tr><td>
+<span class="txtNr">{$l_sendEnterEmail}:{$brtag}</span>
+<input type="text" name="email" value="{$email}" class="textForm topicTitle" />
+{$brtag}{$brtag}
+<span class="txtNr">{$l_sendQuestion}:{$brtag}</span>
+<textarea rows="10" cols="30" name="question" class="textForm postingForm">{$question}</textarea>
+
+<input type="hidden" name="senddirect2" value="yes" />
+<input type="hidden" name="user" value="{$user}" />
+<input type="hidden" name="reportPost" value="{$reportPost}" />
+<input type="hidden" name="topic" value="{$topic}" />
+<input type="hidden" name="forum" value="{$forum}" />
+<input type="hidden" name="page" value="{$page}" />
+{$brtag}<input type="submit" value="{$l_send}" class="inputButton" />{$brtag}{$brtag}
+</td></tr>
+</table>
+</form>
+
+</td></tr></table>

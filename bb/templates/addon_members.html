@@ -1,0 +1,35 @@
+<table class="forumsmb">
+<tr>
+<td class="caption3"><a href="{$main_url}/{$startIndex}" class="mnblnk">{$sitename}</a> / {$l_membersList}</td>
+</tr>
+</table>
+
+<form action="{$main_url}/{$indexphp}" method="get" class="formStyle">
+<input type="hidden" name="action" value="memberslist" />
+<table class="tbTransparentmb">
+<tr>
+<!--pageNav--><td class="txtL">{$pageNav}&nbsp;</td><!--/pageNav-->
+<td class="tbTransparentCell noWrap{$stxtR}" style="width:50%"><input type="text" name="memberSearchVal" value="{$memberSearchVal}" class="textForm" style="width:100px;" />&nbsp;{$memberFieldsDropDown}&nbsp;<input type="submit" value="{$l_searchSite}" class="inputButton" />{$searchBackLink}
+</td>
+</tr>
+</table>
+</form>
+
+<table class="forumsmb">
+<tr>
+<td class="captionTop" style="width:20%"><a href="{$main_url}/{$indexphp}action=memberslist&amp;morder=username&amp;memberSearch={$memberSearch}&amp;memberSearchVal={$memberSearchVal}" class="mnblnk">{$l_usrInfo[1]}</a></td>
+<td class="captionTop" style="width:15%"><a href="{$main_url}/{$indexphp}action=memberslist&amp;morder=user_id&amp;memberSearch={$memberSearch}&amp;memberSearchVal={$memberSearchVal}" class="mnblnk">{$l_usrInfo[2]}</a></td>
+<td class="captionTop" style="width:25%"><a href="{$main_url}/{$indexphp}action=memberslist&amp;morder=user_from&amp;memberSearch={$memberSearch}&amp;memberSearchVal={$memberSearchVal}" class="mnblnk">{$l_usrInfo[8]}</a></td>
+<td class="captionTop" style="width:25%"><a href="{$main_url}/{$indexphp}action=memberslist&amp;morder=user_website&amp;memberSearch={$memberSearch}&amp;memberSearchVal={$memberSearchVal}" class="mnblnk">{$l_usrInfo[6]}</a></td>
+<td class="captionTop" style="width:15%"><a href="{$main_url}/{$indexphp}action=memberslist&amp;morder=user_icq&amp;memberSearch={$memberSearch}&amp;memberSearchVal={$memberSearchVal}" class="mnblnk">{$l_usrInfo[5]}</a></td>
+</tr>
+
+{$memberList}
+
+</table>
+
+<!--pageNav-->
+<table class="tbTransparentmb">
+<tr><td class="txtL">{$pageNav}&nbsp;</td></tr>
+</table>
+<!--/pageNav-->
